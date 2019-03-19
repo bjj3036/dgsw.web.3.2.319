@@ -16,6 +16,30 @@ POST http://localhost:8080/user
 Content-Type: application/json
 
 {
+  "id": "user444",
+  "name": "user4",
+  "email" : "user44@naver.com"
+}
+
+###
+PUT http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "id": "user111",
+  "name": "user12",
+  "email": "user123@naver.com"
+}
+
+###
+DELETE http://localhost:8080/user/user111
+Accept: application/json
+
+###
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
   "id": "user111",
   "name": "user1",
   "email" : "user11@naver.com"
@@ -40,19 +64,5 @@ Content-Type: application/json
   "name": "user3",
   "email" : "user33@naver.com"
 }
-
-###
-PUT http://localhost:8080/user
-Content-Type: application/json
-
-{
-  "id": "user111",
-  "name": "user12",
-  "email": "user123@naver.com"
-}
-
-###
-DELETE http://localhost:8080/user/user111
-Accept: application/json
 
 ###
